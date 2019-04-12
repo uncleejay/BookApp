@@ -7,5 +7,6 @@
         android:title="Search"
         app:showAsAction="always"
         android:visible="true"
-        android:orderInCategory="100"/>
+        android:orderInCategory="100"
+        app:actionViewClass="android.widget.SearchView"/>
 </menu>
