@@ -19,27 +19,15 @@ import com.google.android.material.tabs.TabLayout;
 
 public class MainActivity extends AppCompatActivity {
     private TabLayout tabLayout;
-    private  ViewPager viewPager;
+    private ViewPager viewPager;
+    public static final String baseurl = "";
     AppBarLayout appBarLayout;
-
-
-
-//    @Override
-//    public boolean onOptionsItemSelected(MenuItem item) {
-//        int id=item.getItemId();
-//        switch(id){
-//            case R.id.searchicon:
-//                 Toast.makeText(getApplicationContext(),"search click",Toast.LENGTH_SHORT).show();
-//                break;
-//        }
-//        return super.onOptionsItemSelected(item);
-//    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar toolbar= findViewById(R.id.tbm);
+        Toolbar toolbar = findViewById(R.id.tbm);
         toolbar.setTitle("Book App");
         setSupportActionBar(toolbar);
 
@@ -57,25 +45,26 @@ public class MainActivity extends AppCompatActivity {
         viewPager.setAdapter(tabPagerAdapter);
         tabLayout.setupWithViewPager(viewPager);
 
-        //set on menu item click listener for menu
-        toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
-            @Override
-            public boolean onMenuItemClick(MenuItem item) {
+//        //set on menu item click listener for menu
+//        toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
+//            @Override
+//            public boolean onMenuItemClick(MenuItem item) {
+//
+//                switch (item.getItemId()){
+//                    case R.id.searchicon:
+//                        Toast.makeText(getApplicationContext(), "It works", Toast.LENGTH_SHORT).show();
+//                        break;
+//                }
+//
+//                return true;
+//            }
+//        });
+//    }
 
-                switch (item.getItemId()){
-                    case R.id.searchicon:
-                        Toast.makeText(getApplicationContext(), "It works", Toast.LENGTH_SHORT).show();
-                        break;
-                }
-
-                return true;
-            }
-        });
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu,menu);
-        return super.onCreateOptionsMenu(menu);
+//    @Override
+//    public boolean onCreateOptionsMenu(Menu menu) {
+//        getMenuInflater().inflate(R.menu.menu,menu);
+//        return super.onCreateOptionsMenu(menu);
+//    }
     }
 }

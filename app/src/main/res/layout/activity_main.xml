@@ -15,13 +15,14 @@
         android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
         android:layout_height="wrap_content">
         <androidx.appcompat.widget.Toolbar
+            android:backgroundTint="@color/colorAccent"
             android:id="@+id/tbm"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
         </androidx.appcompat.widget.Toolbar>
 
-    </com.google.android.material.appbar.AppBarLayout>
 
+    </com.google.android.material.appbar.AppBarLayout>
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabs"
         android:layout_width="match_parent"
@@ -35,6 +36,8 @@
         app:tabRippleColor="@color/colorPrimary"
         app:tabSelectedTextColor="@color/colorPrimaryDark"
         app:tabTextColor="@color/tabtextcolor" />
+
+
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewpager"
